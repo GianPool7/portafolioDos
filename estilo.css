@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --bg-fondo-one:#EEC643;
+    --bg-fondo-two:#000000;
+    --bg-fondo-three:#7C7C7C;
+    --bg-fondo-four:#ffffff;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Rubik;
+}
+
+.caja_padre{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 25% 25% 25%;
+    gap: 5%;
+    padding: 10px;
+}
+
+.caja_uno{
+    background-color: green;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.caja_uno:hover{
+    box-shadow: 10px 10px 10px;
+}
+
+
+.caja_uno h1{
+    text-align: justify;
+    color: var(--bg-fondo-one);
+    font-size: 90px;
+}
+
+/**/
+
+.ft{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ft img{
+    width: 35%;
+}
+
+.logos_imagenes:hover{
+    
+}
+
+
+
+
+/*titulo*/
+
+.titulo-one{
+    color: var(--bg-fondo-four);
+}
+
+.titulo-two{
+    color: var(--bg-fondo-two);
+}
+
+.titulo-three{
+    color: var(--bg-fondo-one);
+}
+
+
+
+/**/
+
+.iconos{
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconos a{
+    background-color: #EEC643;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.iconos i{
+    font-size: 40px;
+    color: var(--bg-fondo-two);
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.iconos i:hover{
+    color: var(--bg-fondo-four);
+    background: var(--bg-fondo-two);
+}
+
+
+/*metodologia BEM*/
+
+.yellow{
+    background-color: var(--bg-fondo-one);
+}
+
+.black{
+    background-color: var(--bg-fondo-two);
+}
+
+.tercero{
+    background-color: var(--bg-fondo-three);
+}
+
+
+
+
+/*responsivo*/
+
+@media only screen and (max-width: 1023px) {
+    .caja_padre{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 40% 40%;
+        gap: 5%;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .caja_padre{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 90%;
+        gap: 5%;
+        padding: 10px;
+    }
+}
+
+
